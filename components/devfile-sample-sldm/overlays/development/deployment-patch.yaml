@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-sldm
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-43256-0069-tenant/ci1t-43256-0069-app/devfile-sample-sldm@sha256:b7de57792f9992cf49dd13d1bf1f88b0312b2c9875bd72c23a18a074bd04d603
+        name: my-nodejs
+        resources: {}
+status: {}
